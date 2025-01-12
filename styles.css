@@ -1,14 +1,17 @@
 body {
+    background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 header {
     background-color: #4CAF50;
-    color: white;
+    color: #fff;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 #search-form {
@@ -29,10 +32,11 @@ button {
     background-color: #fff;
     color: #4CAF50;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #f1f1f1;
+    background-color: #e2e2e2;
 }
 
 #books-container {
@@ -49,6 +53,13 @@ button:hover {
     padding: 15px;
     width: 200px;
     text-align: center;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.book-item:hover {
+    transform: translateY(-3px);
 }
 
 .book-item img {
